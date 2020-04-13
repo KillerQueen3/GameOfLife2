@@ -1,13 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d9510fc-78c4-4179-846b-b5aa9b1686c3" name="Default Changelist" comment="" />
+    <list default="true" id="5d9510fc-78c4-4179-846b-b5aa9b1686c3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/entity/LifeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/entity/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/tool/Tools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/ui/ui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/run.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/entity/Life.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/entity/Life.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="E:\java\GameOfLive\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1aUG00hpakWkpGH9QWtby3BHdlR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,9 +43,25 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="GameOfLife" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -49,13 +93,73 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1586782598345" />
+    <state x="409" y="6" key="CommitChangelistDialog2" timestamp="1586788904878">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="409" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586788904878" />
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1586782828660">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1586782828660" />
     <state x="589" y="326" width="382" height="172" key="Github.CreateGistDialog" timestamp="1586782736690">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="589" y="326" width="382" height="172" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1586782736690" />
+    <state x="631" y="303" key="Github.ShareDialog" timestamp="1586783117528">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="631" y="303" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1586783117528" />
+    <state x="602" y="118" key="Github.UntrackedFilesDialog" timestamp="1586783127781">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="602" y="118" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586783127781" />
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1586788904894">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586788904894" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1586788904894">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586788904894" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1586788904894">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586788904894" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1586788904894">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586788904894" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1586788904894">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586788904894" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1586788904894">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586788904894" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1586788904894">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586788904894" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1586788904894">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586788904894" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1586782919203">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586782919203" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1586782872497">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586782872497" />
     <state x="377" y="0" width="782" height="824" key="find.popup" timestamp="1586782722035">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="377" y="0" width="782" height="824" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1586782722035" />
+    <state x="600" y="277" key="git4idea.rebase.GitRebaseDialog" timestamp="1586782886315">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="600" y="277" key="git4idea.rebase.GitRebaseDialog/0.0.1536.824@0.0.1536.824" timestamp="1586782886315" />
   </component>
 </project>
