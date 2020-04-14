@@ -1,12 +1,13 @@
 package com.entity;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class LifeList {
     Life[][] lives;   //保存生命的数组
     int maxX;       //最大x向数量
     int maxY;       //最大y向数量
-    int aliveNum;   //存活数
+    public int aliveNum;   //存活数
 
     public LifeList(int xx, int yy)
     {
@@ -62,13 +63,51 @@ public class LifeList {
                     num++;
             }
         }
+        aliveNum = num;
         return num;
     }
 
-    public void makeAlive(int x, int y)   //使给定坐标的生命存活
+    public void clear()                  //杀死所有生命
+    {
+        for(int i = 0; i <maxX; i++)
+        {
+            for(int j = 0; j<maxY; j++)
+            {
+                lives[i][j].alive = false;
+            }
+        }
+        aliveNum = 0;
+        UpdateNeighbours();
+        UpdateLife();
+    }
+
+    public void makeAlive(int x, int y, boolean life)   //使给定坐标的生命存活或死亡
     {
         if(CheckXY(x,y))
-            lives[x][y].alive=true;
+        {
+            if(lives[x][y].alive!=life)
+            {
+                lives[x][y].alive=life;
+                if(life)                 // 更新存活数
+                    aliveNum++;
+                else
+                    aliveNum--;
+            }
+        }
+    }
+
+    public ArrayList<Position> getLifePosition()     //返回所有存活生命的坐标表
+    {
+        ArrayList<Position> positions = new ArrayList<>();
+        for(int i = 0; i <maxX; i++)
+        {
+            for(int j = 0; j<maxY; j++)
+            {
+                if(lives[i][j].alive)
+                    positions.add(lives[i][j].position);
+            }
+        }
+        return positions;
     }
 
     public void print()         //打印lives表(测试用)
