@@ -1,4 +1,4 @@
-#Game Of Life
+# Game Of Life
 
 made by INK
 
