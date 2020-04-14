@@ -1,6 +1,6 @@
 #Game Of Life
 
-made by INK\
+made by INK
 
 使用左键点击格子使生命存活\
 使用右键则使生命死亡\
