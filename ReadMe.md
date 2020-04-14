@@ -1,4 +1,4 @@
-#Game Of Life
+# Game Of Life
 made by INK
 
 使用左键点击格子使生命存活\

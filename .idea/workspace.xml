@@ -1,39 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="GameOfLife:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d9510fc-78c4-4179-846b-b5aa9b1686c3" name="Default Changelist" comment="1.0">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/MigLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/miglayout-core-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/miglayout-core-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/miglayout-core.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/miglayout-swing-javadoc.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/miglayout-swing-sources.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/miglayout-swing.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GameOfLife/META-INF/GameOfLife.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GameOfLife/com/ui/GUI$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GameOfLife/com/ui/GUI$MyThread.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GameOfLife/com/ui/GUI.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GameOfLife/com/ui/GUI.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/GameOfLife/com/ui/MyPanel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ui/GUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ui/GUI.jfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ui/MyPanel.java" afterDir="false" />
+    <list default="true" id="5d9510fc-78c4-4179-846b-b5aa9b1686c3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GameOfLife.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GameOfLife.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameOfLife/Test$1Tt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameOfLife/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GameOfLife/com/entity/LifeList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLife/com/entity/LifeList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameOfLife/com/entity/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLife/com/entity/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameOfLife/com/tool/Tools.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameOfLife/com/ui/ui.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameOfLife/run.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLife/run.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/entity/LifeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/entity/LifeList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/entity/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/entity/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/tool/Tools.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ui/ui.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/run.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/run.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586788947927</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1.0">
+      <created>1586865062759</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586865062759</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -146,14 +130,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="198" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1586864970130" />
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586865323663">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="148" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1536.824@0.0.1536.824" timestamp="1586865323663" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586857301121">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586857301121" />
-    <state x="409" y="6" key="CommitChangelistDialog2" timestamp="1586864944894">
+    <state x="473" y="138" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586870544944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="409" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586864944894" />
+    <state x="473" y="138" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1586870544944" />
+    <state x="409" y="6" key="CommitChangelistDialog2" timestamp="1586865058782">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="409" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586865058782" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1586789102097">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -170,22 +162,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="602" y="118" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586783127781" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586864944908">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1586870626802">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586864944908" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586864944908">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586870626802" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1586870626801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586864944908" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586864944908">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586870626801" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1586870626801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586864944908" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586864944908">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586870626801" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1586870626801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586864944908" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586870626801" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1586861766823">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -206,10 +198,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586864974022" />
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1586789353558">
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2" timestamp="1586865069759">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586789353558" />
+    <state x="361" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586865069759" />
     <state x="377" y="0" width="782" height="824" key="find.popup" timestamp="1586782722035">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

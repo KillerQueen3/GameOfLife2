@@ -74,11 +74,10 @@ public class LifeList {
             for(int j = 0; j<maxY; j++)
             {
                 lives[i][j].alive = false;
+                lives[i][j].neighbour = 0;
             }
         }
         aliveNum = 0;
-        UpdateNeighbours();
-        UpdateLife();
     }
 
     public void makeAlive(int x, int y, boolean life)   //使给定坐标的生命存活或死亡
