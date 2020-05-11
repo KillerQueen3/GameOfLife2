@@ -24,8 +24,8 @@ public class GUI extends JFrame {
         initComponents();
         this.setVisible(true);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        myPanel1.setMax(30, 30);        // 设置最大xy
-        myPanel1.repaint();
+        drawer.setMax(30, 30);        // 设置最大xy
+        drawer.repaint();
         myThread.start();
     }
 
@@ -36,12 +36,12 @@ public class GUI extends JFrame {
             while(true){
                 if(!stopFlag)
                 {
-                    myPanel1.lifeList.UpdateNeighbours();
-                    lifeNum = myPanel1.lifeList.UpdateLife();     // 更新life表
+                    drawer.lifeList.UpdateNeighbours();
+                    lifeNum = drawer.lifeList.UpdateLife();     // 更新life表
                     label1.setText(String.valueOf(lifeNum));
                     generation++;
                     label2.setText(String.valueOf(generation));   // 更新代数
-                    myPanel1.repaint();
+                    drawer.repaint();
                 }
                 try
                 {
@@ -53,18 +53,6 @@ public class GUI extends JFrame {
                 }
             }
         }
-    }
-
-    private void myPanel1MouseClicked(MouseEvent e) {
-        int x = e.getX();
-        int y = e.getY();
-        if(e.getButton() == MouseEvent.BUTTON1&&stopFlag)                  //左击添加生命
-            myPanel1.lifeList.makeAlive(x / 10, y / 10, true);
-        else if(e.getButton() == MouseEvent.BUTTON3&&stopFlag)             //右击杀死生命
-            myPanel1.lifeList.makeAlive(x / 10, y / 10, false);
-        lifeNum = myPanel1.lifeList.aliveNum;
-        label1.setText(String.valueOf(lifeNum));
-        myPanel1.repaint();
     }
 
     private void button2ActionPerformed(ActionEvent e) {        // 开始按钮，同时禁止编辑
@@ -81,8 +69,8 @@ public class GUI extends JFrame {
 
     private void button3ActionPerformed(ActionEvent e) {        // 清除按钮
         if(stopFlag) {
-            myPanel1.lifeList.clear();
-            myPanel1.repaint();
+            drawer.lifeList.clear();
+            drawer.repaint();
             generation = 0;
             lifeNum = 0;
             label1.setText(String.valueOf(lifeNum));
@@ -93,24 +81,36 @@ public class GUI extends JFrame {
     private void button4ActionPerformed(ActionEvent e) {         // 随机按钮
         if(stopFlag)
         {
-            myPanel1.lifeList.clear();
-            ArrayList<Position> positions= Position.randomPositions(myPanel1.maxX, myPanel1.maxY);
-            for(Position p: positions)
+            drawer.lifeList.clear();
+            ArrayList<Position> positions= Position.randomPositions(drawer.maxX, drawer.maxY);  // 随机坐标组
+            for(Position p: positions)                           // 更新表
             {
-                myPanel1.lifeList.makeAlive(p.x, p.y, true);
+                drawer.lifeList.makeAlive(p.x, p.y, true);
             }
-            lifeNum = myPanel1.lifeList.aliveNum;
+            lifeNum = drawer.lifeList.aliveNum;
             generation = 0;
-            myPanel1.repaint();
+            drawer.repaint();
             label1.setText(String.valueOf(lifeNum));
             label2.setText(String.valueOf(generation));
         }
     }
 
+    private void drawerMouseClicked(MouseEvent e) {
+        int x = e.getX();
+        int y = e.getY();
+        if(e.getButton() == MouseEvent.BUTTON1&&stopFlag)                  //左击添加生命
+            drawer.lifeList.makeAlive(x / 10, y / 10, true);
+        else if(e.getButton() == MouseEvent.BUTTON3&&stopFlag)             //右击杀死生命
+            drawer.lifeList.makeAlive(x / 10, y / 10, false);
+        lifeNum = drawer.lifeList.aliveNum;
+        label1.setText(String.valueOf(lifeNum));
+        drawer.repaint();
+    }
+
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
-        myPanel1 = new MyPanel();
         button2 = new JButton();
+        drawer = new MyPanel();
         button1 = new JButton();
         button3 = new JButton();
         label3 = new JLabel();
@@ -129,27 +129,26 @@ public class GUI extends JFrame {
             "[105,fill]" +
             "[42,fill]",
             // rows
-            "[61]" +
+            "[85]" +
             "[105]" +
-            "[134]0" +
+            "[77]0" +
             "[27]0" +
             "[30]0" +
-            "[]0" +
             "[]"));
-
-        //---- myPanel1 ----
-        myPanel1.addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                myPanel1MouseClicked(e);
-            }
-        });
-        contentPane.add(myPanel1, "cell 0 0 2 3,growy");
 
         //---- button2 ----
         button2.setText("start");
         button2.addActionListener(e -> button2ActionPerformed(e));
         contentPane.add(button2, "cell 2 0");
+
+        //---- drawer ----
+        drawer.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                drawerMouseClicked(e);
+            }
+        });
+        contentPane.add(drawer, "cell 0 0 2 3,growy");
 
         //---- button1 ----
         button1.setText("stop");
@@ -187,8 +186,8 @@ public class GUI extends JFrame {
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
-    private MyPanel myPanel1;
     private JButton button2;
+    private MyPanel drawer;
     private JButton button1;
     private JButton button3;
     private JLabel label3;

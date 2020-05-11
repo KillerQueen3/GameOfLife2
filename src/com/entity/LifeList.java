@@ -15,24 +15,24 @@ public class LifeList {
         maxY = yy;
         lives = new Life[xx][yy];
         aliveNum = 0;
-        for(int i = 0; i<maxX; i++)           // 初始化生命列表
+        for(int i = 0; i<maxX; i++)          // 初始化生命列表
         {
             for(int j = 0; j<maxY ;j++)
             {
-                lives[i][j] = new Life(i,j);
+                lives[i][j] = new Life(i, j);
             }
         }
     }
 
-    boolean CheckXY(int x, int y)          // 检查坐标是否越界，不越界返回true
+    boolean CheckXY(int x, int y)            // 检查坐标是否越界，不越界返回true
     {
         return x < maxX && y < maxY && x >= 0 && y >= 0;
     }
 
     public void UpdateNeighbours()           // 更新所有生命的邻居数，不更新是否生存
     {
-        int num;                  // 临时存放邻居数
-        Position[] positions;     // 临时存放邻居坐标
+        int num;                             // 临时存放邻居数
+        Position[] positions;                // 临时存放邻居坐标
         for(int i = 0; i<maxX; i++)
         {
             for(int j=0; j<maxY; j++)
@@ -41,7 +41,7 @@ public class LifeList {
                 positions = lives[i][j].position.getNeighbours();
                 for(Position position:positions)
                 {
-                    if (CheckXY(position.x,position.y))        // 不越界
+                    if (CheckXY(position.x,position.y))          // 不越界
                     {
                         if(lives[position.x][position.y].alive)  // 邻居存活则增加邻居数
                             num++;
@@ -84,9 +84,9 @@ public class LifeList {
     {
         if(CheckXY(x,y))
         {
-            if(lives[x][y].alive!=life)
+            if(lives[x][y].alive != life)
             {
-                lives[x][y].alive=life;
+                lives[x][y].alive = life;
                 if(life)                 // 更新存活数
                     aliveNum++;
                 else

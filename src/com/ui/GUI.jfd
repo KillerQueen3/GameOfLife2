@@ -6,22 +6,22 @@ new FormModel {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
 			"$layoutConstraints": "hidemode 3"
 			"$columnConstraints": "[217,fill][105,fill][42,fill]"
-			"$rowConstraints": "[61][105][134]0[27]0[30]0[]0[]"
+			"$rowConstraints": "[85][105][77]0[27]0[30]0[]"
 		} ) {
 			name: "this"
 			"title": "GameOfLife"
-			add( new FormComponent( "com.ui.MyPanel" ) {
-				name: "myPanel1"
-				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "myPanel1MouseClicked", true ) )
-			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
-				"value": "cell 0 0 2 3,growy"
-			} )
 			add( new FormComponent( "javax.swing.JButton" ) {
 				name: "button2"
 				"text": "start"
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
 			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 				"value": "cell 2 0"
+			} )
+			add( new FormComponent( "com.ui.MyPanel" ) {
+				name: "drawer"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "drawerMouseClicked", true ) )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 0 0 2 3,growy"
 			} )
 			add( new FormComponent( "javax.swing.JButton" ) {
 				name: "button1"
