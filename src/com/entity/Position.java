@@ -27,12 +27,13 @@ public class Position {
         return positions;
     }
 
-    public static ArrayList<Position> randomPositions(int maxX, int maxY, int size)  //返回一个在范围内，数量不大于size的随机坐标组
+    public static ArrayList<Position> randomPositions(int maxX, int maxY)  //返回一个在范围内，数量不大于范围乘积的一半的随机坐标组
     {
         ArrayList<Position> positions = new ArrayList<>();
         Random random = new Random(System.currentTimeMillis());
         int x;
         int y;
+        int size = (int)(maxX * maxY * 0.5);
         for(int i = 0; i<size; i++)
         {
             x=random.nextInt(maxX);

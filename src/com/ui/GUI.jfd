@@ -1,12 +1,12 @@
-JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.5" encoding: "UTF-8"
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.6" encoding: "UTF-8"
 
 new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
 			"$layoutConstraints": "hidemode 3"
-			"$columnConstraints": "[97,fill][105,fill][42,fill]"
-			"$rowConstraints": "[69][58][83]0[27]0[30]"
+			"$columnConstraints": "[217,fill][105,fill][42,fill]"
+			"$rowConstraints": "[61][105][134]0[27]0[30]0[]0[]"
 		} ) {
 			name: "this"
 			"title": "GameOfLife"
@@ -19,7 +19,6 @@ new FormModel {
 			add( new FormComponent( "javax.swing.JButton" ) {
 				name: "button2"
 				"text": "start"
-				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
 			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
 				"value": "cell 2 0"
@@ -71,7 +70,7 @@ new FormModel {
 			} )
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 315, 310 )
+			"size": new java.awt.Dimension( 545, 335 )
 		} )
 	}
 }

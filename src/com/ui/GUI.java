@@ -12,24 +12,24 @@ import com.entity.Position;
 import net.miginfocom.swing.*;
 
 /**
- * @author Brainrain
+ * @author INK
  */
 public class GUI extends JFrame {
     MyThread myThread = new MyThread();
-    boolean stopFlag = true;     //停止变换的标志
-    int lifeNum;                 //存活生命数
-    int generation=0;              //代数
+    boolean stopFlag = true;         // 停止变换的标志
+    int lifeNum;                     // 存活生命数
+    int generation = 0;              // 代数
 
     public GUI() {
         initComponents();
         this.setVisible(true);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setResizable(false);
+        myPanel1.setMax(30, 30);        // 设置最大xy
         myPanel1.repaint();
         myThread.start();
     }
 
-    class MyThread extends Thread       //变换的线程
+    class MyThread extends Thread       // 变换的线程
     {
         public void run()
         {
@@ -37,20 +37,20 @@ public class GUI extends JFrame {
                 if(!stopFlag)
                 {
                     myPanel1.lifeList.UpdateNeighbours();
-                    lifeNum = myPanel1.lifeList.UpdateLife();
+                    lifeNum = myPanel1.lifeList.UpdateLife();     // 更新life表
                     label1.setText(String.valueOf(lifeNum));
                     generation++;
-                    label2.setText(String.valueOf(generation));
+                    label2.setText(String.valueOf(generation));   // 更新代数
                     myPanel1.repaint();
                 }
                 try
                 {
-                    sleep(1000);
+                    sleep(1000);     // 时间间隔1s
                 }
                 catch (Exception e)
                 {
                     e.printStackTrace();
-            }
+                }
             }
         }
     }
@@ -59,49 +59,51 @@ public class GUI extends JFrame {
         int x = e.getX();
         int y = e.getY();
         if(e.getButton() == MouseEvent.BUTTON1&&stopFlag)                  //左击添加生命
-            myPanel1.lifeList.makeAlive(x/10,y/10, true);
+            myPanel1.lifeList.makeAlive(x / 10, y / 10, true);
         else if(e.getButton() == MouseEvent.BUTTON3&&stopFlag)             //右击杀死生命
-            myPanel1.lifeList.makeAlive(x/10,y/10,false);
-        lifeNum=myPanel1.lifeList.aliveNum;
+            myPanel1.lifeList.makeAlive(x / 10, y / 10, false);
+        lifeNum = myPanel1.lifeList.aliveNum;
         label1.setText(String.valueOf(lifeNum));
         myPanel1.repaint();
     }
 
-    private void button2ActionPerformed(ActionEvent e) {
+    private void button2ActionPerformed(ActionEvent e) {        // 开始按钮，同时禁止编辑
         stopFlag = false;
         button3.setEnabled(false);
         button4.setEnabled(false);
     }
 
-    private void button1ActionPerformed(ActionEvent e) {
+    private void button1ActionPerformed(ActionEvent e) {        // 停止按钮，同时允许编辑
         stopFlag = true;
         button3.setEnabled(true);
         button4.setEnabled(true);
     }
 
-    private void button3ActionPerformed(ActionEvent e) {
+    private void button3ActionPerformed(ActionEvent e) {        // 清除按钮
         if(stopFlag) {
             myPanel1.lifeList.clear();
             myPanel1.repaint();
-            generation=0;
-            lifeNum=0;
+            generation = 0;
+            lifeNum = 0;
             label1.setText(String.valueOf(lifeNum));
             label2.setText(String.valueOf(generation));
         }
     }
 
-    private void button4ActionPerformed(ActionEvent e) {
+    private void button4ActionPerformed(ActionEvent e) {         // 随机按钮
         if(stopFlag)
         {
             myPanel1.lifeList.clear();
-            ArrayList<Position> positions= Position.randomPositions(20,20, 200);
+            ArrayList<Position> positions= Position.randomPositions(myPanel1.maxX, myPanel1.maxY);
             for(Position p: positions)
             {
-                myPanel1.lifeList.makeAlive(p.x,p.y,true);
+                myPanel1.lifeList.makeAlive(p.x, p.y, true);
             }
             lifeNum = myPanel1.lifeList.aliveNum;
+            generation = 0;
             myPanel1.repaint();
             label1.setText(String.valueOf(lifeNum));
+            label2.setText(String.valueOf(generation));
         }
     }
 
@@ -123,15 +125,17 @@ public class GUI extends JFrame {
         contentPane.setLayout(new MigLayout(
             "hidemode 3",
             // columns
-            "[97,fill]" +
+            "[217,fill]" +
             "[105,fill]" +
             "[42,fill]",
             // rows
-            "[69]" +
-            "[58]" +
-            "[83]0" +
+            "[61]" +
+            "[105]" +
+            "[134]0" +
             "[27]0" +
-            "[30]"));
+            "[30]0" +
+            "[]0" +
+            "[]"));
 
         //---- myPanel1 ----
         myPanel1.addMouseListener(new MouseAdapter() {
@@ -144,10 +148,7 @@ public class GUI extends JFrame {
 
         //---- button2 ----
         button2.setText("start");
-        button2.addActionListener(e -> {
-			button2ActionPerformed(e);
-			button2ActionPerformed(e);
-		});
+        button2.addActionListener(e -> button2ActionPerformed(e));
         contentPane.add(button2, "cell 2 0");
 
         //---- button1 ----
