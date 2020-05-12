@@ -24,7 +24,7 @@ public class GUI extends JFrame {
         initComponents();
         this.setVisible(true);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        drawer.setMax(30, 30);        // 设置最大xy
+        drawer.setMax(60, 60);        // 设置最大xy
         drawer.repaint();
         myThread.start();
     }
@@ -125,13 +125,13 @@ public class GUI extends JFrame {
         contentPane.setLayout(new MigLayout(
             "hidemode 3",
             // columns
-            "[217,fill]" +
-            "[105,fill]" +
+            "[333,fill]0" +
+            "[272,fill]" +
             "[42,fill]",
             // rows
             "[85]0" +
-            "[105]0" +
-            "[127]0" +
+            "[123]0" +
+            "[393]0" +
             "[27]0" +
             "[30]0" +
             "[]"));

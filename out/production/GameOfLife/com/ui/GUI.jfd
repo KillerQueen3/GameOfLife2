@@ -5,8 +5,8 @@ new FormModel {
 	root: new FormRoot {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
 			"$layoutConstraints": "hidemode 3"
-			"$columnConstraints": "[217,fill][105,fill][42,fill]"
-			"$rowConstraints": "[85][105][77]0[27]0[30]0[]"
+			"$columnConstraints": "[333,fill]0[272,fill][42,fill]"
+			"$rowConstraints": "[85]0[123]0[393]0[27]0[30]0[]"
 		} ) {
 			name: "this"
 			"title": "GameOfLife"
@@ -70,7 +70,7 @@ new FormModel {
 			} )
 		}, new FormLayoutConstraints( null ) {
 			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 545, 335 )
+			"size": new java.awt.Dimension( 715, 650 )
 		} )
 	}
 }
