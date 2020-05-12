@@ -3,10 +3,18 @@ package com.entity;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * 坐标辅助类。
+ */
 public class Position {
     public int x;         // x坐标
     public int y;         // y坐标
 
+    /**
+     * 构造函数
+     * @param xx x坐标
+     * @param yy y坐标
+     */
     Position(int xx, int yy) {
         x = xx;
         y = yy;
