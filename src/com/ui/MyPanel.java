@@ -15,6 +15,8 @@ public class MyPanel extends JPanel {
     public int maxX;                     // 最大x向数量
     public int maxY;                     // 最大y向数量
     public LifeList lifeList;
+    private final Random random = new Random(System.currentTimeMillis());
+    public boolean colorful = false;
 
     public MyPanel()         // 无参构造函数，默认大小20*20
     {
@@ -47,12 +49,14 @@ public class MyPanel extends JPanel {
         }
         ArrayList<Position> lifePosition = lifeList.getLifePosition();
 
-        // 让颜色每次都变化
-        Random random = new Random(System.currentTimeMillis());
-        int cr = random.nextInt(225);
-        int cg = random.nextInt(225);
-        int cb = random.nextInt(225);
-        g.setColor(new Color(cr, cg, cb));
+        if(colorful) {                                   // 让颜色每次都变化
+            int cr = random.nextInt(225);
+            int cg = random.nextInt(225);
+            int cb = random.nextInt(225);
+            g.setColor(new Color(cr, cg, cb));
+        }
+        else
+            g.setColor(Color.BLACK);
 
         for(Position p : lifePosition)                   // 画life表
         {

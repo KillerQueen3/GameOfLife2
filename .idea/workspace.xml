@@ -8,10 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5d9510fc-78c4-4179-846b-b5aa9b1686c3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/GameOfLife_jar/GameOfLife.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/GameOfLife_jar/GameOfLife.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameOfLife/com/entity/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLife/com/entity/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameOfLife/com/ui/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLife/com/ui/GUI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GameOfLife/com/ui/GUI.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLife/com/ui/GUI.jfd" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GameOfLife/com/ui/MyPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GameOfLife/com/ui/MyPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ui/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ui/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ui/GUI.jfd" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ui/GUI.jfd" afterDir="false" />
@@ -126,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589284435851</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="enlarge size and color could change">
+      <created>1589293448602</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589293448602</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -136,7 +139,8 @@
     <MESSAGE value="small changes" />
     <MESSAGE value="format changes" />
     <MESSAGE value="small improvement" />
-    <option name="LAST_COMMIT_MESSAGE" value="small improvement" />
+    <MESSAGE value="enlarge size and color could change" />
+    <option name="LAST_COMMIT_MESSAGE" value="enlarge size and color could change" />
   </component>
   <component name="WindowStateProjectService">
     <state x="340" y="16" key="#HTTP_Proxy" timestamp="1586789198973">
@@ -171,18 +175,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="473" y="138" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1586870544944" />
-    <state x="409" y="0" key="CommitChangelistDialog2" timestamp="1589284432535">
+    <state x="467" y="6" width="802" height="811" key="CommitChangelistDialog2" timestamp="1589293445637">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="409" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589284432535" />
+    <state x="467" y="6" width="802" height="811" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589293445637" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1586872711486">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1586872711486" />
-    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1589188343527">
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1589343932027">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589188343527" />
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589343932027" />
     <state x="589" y="326" width="382" height="172" key="Github.CreateGistDialog" timestamp="1586782736690">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -195,22 +199,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="602" y="118" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1586783127781" />
-    <state width="1493" height="5" key="GridCell.Tab.0.bottom" timestamp="1589293279195">
+    <state width="1493" height="166" key="GridCell.Tab.0.bottom" timestamp="1589348586369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="5" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589293279195" />
-    <state width="1493" height="5" key="GridCell.Tab.0.center" timestamp="1589293279194">
+    <state width="1493" height="166" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589348586369" />
+    <state width="1493" height="166" key="GridCell.Tab.0.center" timestamp="1589348586369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="5" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589293279194" />
-    <state width="1493" height="5" key="GridCell.Tab.0.left" timestamp="1589293279194">
+    <state width="1493" height="166" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589348586369" />
+    <state width="1493" height="166" key="GridCell.Tab.0.left" timestamp="1589348586369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="5" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589293279194" />
-    <state width="1493" height="5" key="GridCell.Tab.0.right" timestamp="1589293279194">
+    <state width="1493" height="166" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589348586369" />
+    <state width="1493" height="166" key="GridCell.Tab.0.right" timestamp="1589348586369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="5" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589293279194" />
+    <state width="1493" height="166" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589348586369" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1586861766823">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
