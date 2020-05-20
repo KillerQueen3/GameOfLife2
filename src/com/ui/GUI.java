@@ -5,13 +5,13 @@
 package com.ui;
 
 import java.awt.event.*;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import javax.swing.*;
 import javax.swing.event.*;
 
 import com.entity.Position;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import net.miginfocom.swing.*;
 
 /**
@@ -24,6 +24,7 @@ public class GUI extends JFrame {
     int generation = 0;              // 代数
     int interval = 1000;             // 间隔时间
 
+    @SuppressFBWarnings("SC_START_IN_CTOR")
     public GUI() {
         initComponents();
         this.setVisible(true);
@@ -36,27 +37,21 @@ public class GUI extends JFrame {
         spinner1.setModel(spinnerListModel);
     }
 
-    class MyThread extends Thread       // 变换的线程
-    {
-        public void run()
-        {
-            while(true){
+    class MyThread extends Thread {      // 变换的线程
+        public void run() {
+            while (true) {
                 drawer.colorful = radioButton1.isSelected();  // 设定颜色变化
-                if(!stopFlag)
-                {
-                    drawer.lifeList.UpdateNeighbours();
-                    lifeNum = drawer.lifeList.UpdateLife();     // 更新life表
+                if (!stopFlag) {
+                    drawer.lifeList.updateNeighbours();
+                    lifeNum = drawer.lifeList.updateLife();     // 更新life表
                     label1.setText(String.valueOf(lifeNum));
                     generation++;
                     label2.setText(String.valueOf(generation));   // 更新代数
                     drawer.repaint();
                 }
-                try
-                {
+                try {
                     sleep(interval);     // 时间间隔1s
-                }
-                catch (Exception e)
-                {
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
@@ -76,7 +71,7 @@ public class GUI extends JFrame {
     }
 
     private void button3ActionPerformed(ActionEvent e) {        // 清除按钮
-        if(stopFlag) {
+        if (stopFlag) {
             drawer.lifeList.clear();
             drawer.repaint();
             generation = 0;
@@ -87,12 +82,10 @@ public class GUI extends JFrame {
     }
 
     private void button4ActionPerformed(ActionEvent e) {         // 随机按钮
-        if(stopFlag)
-        {
+        if (stopFlag) {
             drawer.lifeList.clear();
-            ArrayList<Position> positions= Position.randomPositions(drawer.maxX, drawer.maxY);  // 随机坐标组
-            for(Position p: positions)                           // 更新表
-            {
+            List<Position> positions = Position.randomPositions(drawer.maxX, drawer.maxY);  // 随机坐标组
+            for (Position p : positions) {                          // 更新表
                 drawer.lifeList.makeAlive(p.x, p.y, true);
             }
             lifeNum = drawer.lifeList.aliveNum;
@@ -106,10 +99,12 @@ public class GUI extends JFrame {
     private void drawerMouseClicked(MouseEvent e) {
         int x = e.getX();
         int y = e.getY();
-        if(e.getButton() == MouseEvent.BUTTON1&&stopFlag)                  // 左击添加生命
-            drawer.lifeList.makeAlive(x / 10, y / 10, true);
-        else if(e.getButton() == MouseEvent.BUTTON3&&stopFlag)             // 右击杀死生命
-            drawer.lifeList.makeAlive(x / 10, y / 10, false);
+        int size = 10;
+        if (e.getButton() == MouseEvent.BUTTON1 && stopFlag) {                // 左击添加生命
+            drawer.lifeList.makeAlive(x / size, y / size, true);
+        } else if (e.getButton() == MouseEvent.BUTTON3 && stopFlag) {           // 右击杀死生命
+            drawer.lifeList.makeAlive(x / size, y / size, false);
+        }
         lifeNum = drawer.lifeList.aliveNum;
         label1.setText(String.valueOf(lifeNum));
         drawer.repaint();
