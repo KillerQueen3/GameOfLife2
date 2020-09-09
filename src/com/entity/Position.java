@@ -16,7 +16,7 @@ public class Position {
      * @param xx x坐标
      * @param yy y坐标
      */
-    Position(int xx, int yy) {
+    public Position(int xx, int yy) {
         x = xx;
         y = yy;
     }

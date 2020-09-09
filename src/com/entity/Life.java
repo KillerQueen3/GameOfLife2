@@ -13,7 +13,7 @@ public class Life {
      * @param xx x坐标
      * @param yy y坐标
      */
-    Life(int xx, int yy) {
+    public Life(int xx, int yy) {
         position = new Position(xx, yy);
         alive = false;
         neighbour = 0;

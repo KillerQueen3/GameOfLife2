@@ -8,9 +8,9 @@ import java.util.List;
  * 生命表，处理各种变换.
  */
 public class LifeList {
-    Life[][] lives;        // 保存生命的数组
-    int maxX;              // 最大x向数量
-    int maxY;              // 最大y向数量
+    public Life[][] lives;        // 保存生命的数组
+    public int maxX;              // 最大x向数量
+    public int maxY;              // 最大y向数量
     public int aliveNum;   // 存活数
 
     /**
@@ -36,7 +36,7 @@ public class LifeList {
      * @param y y坐标
      * @return 不越界？
      */
-    boolean checkXY(final int x, final int y) {
+    public boolean checkXY(final int x, final int y) {
         return x < maxX && y < maxY && x >= 0 && y >= 0;
     }
 
